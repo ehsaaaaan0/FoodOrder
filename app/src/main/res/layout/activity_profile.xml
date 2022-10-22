@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:id="@+id/logout_image"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/exit"
+            android:layout_marginRight="10dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home_profile_image_bg"
+            android:paddingRight="5dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/profile_lottie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/user_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/times_new_roman"
+            android:text="Ehsan Abid"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/totalordercard"
+        app:cardElevation="20dp"
+        android:layout_marginStart="40dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Order : 0"
+            android:layout_gravity="center"
+            android:textColor="@color/textcolor"
+            android:fontFamily="@font/times_new_roman_bold"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        app:cardCornerRadius="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/totalordercard"
+        android:layout_marginTop="30dp"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:id="@+id/account_information"
+                android:orientation="horizontal">
+            <ImageView
+                android:layout_width="54dp"
+                android:layout_height="44dp"
+                android:src="@drawable/avatar"
+                android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Account Information"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/textcolor"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:src="@drawable/go"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="end|center" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/iconscolor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/order_history"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="44dp"
+                    android:src="@drawable/history"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order History             "
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/textcolor"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:src="@drawable/go"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="end|center" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/iconscolor"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/edit_address"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/address"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address Information"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/textcolor"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:src="@drawable/go"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="end|center" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:elevation="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/iconscolor"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:id="@+id/logout_layout"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="54dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/logout"
+                    android:layout_marginStart="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Logout                        "
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:textSize="17sp"
+                    android:textColor="@color/textcolor"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:src="@drawable/go"
+                    android:layout_marginStart="20dp"
+                    android:layout_gravity="end|center" />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminPanel.Add_food">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Atleats 3 images"
+                android:layout_marginStart="10dp"
+                android:textSize="22sp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                android:layout_marginLeft="10dp" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/uplaod_images"
+                    android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image1"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/upload_image"/>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/image2"
+                    android:layout_marginStart="10dp"
+                    android:visibility="gone"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/upload_image"/>
+
+                <ImageView
+                    android:layout_width="250dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    android:id="@+id/image3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/upload_image"/>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:spinnerMode="dropdown"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:id="@+id/dishtitle"
+                android:hint="Enter Title of Dish"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcoloenormal"
+                android:textSize="15sp"
+                android:paddingStart="30dp"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:id="@+id/dishDescription"
+                android:hint="Description of Dish"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/edit_text_bg"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcoloenormal"
+                android:textSize="15sp"
+                android:singleLine="false"
+                android:paddingStart="30dp"
+                android:layout_marginTop="40dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="Estimate Prepare Time in Minute"
+                android:id="@+id/time_prepair"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="number"
+                android:background="@drawable/edit_text_bg"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcoloenormal"
+                android:textSize="15sp"
+                android:paddingStart="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:hint="Price"
+                android:id="@+id/price"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:inputType="number"
+                android:background="@drawable/edit_text_bg"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/textcoloenormal"
+                android:textSize="15sp"
+                android:paddingStart="30dp"
+                android:layout_marginTop="20dp"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbg"
+                android:text="Add Dish"
+                android:id="@+id/submit_dish"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:textColor="@color/textcolor"/>
+
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</LinearLayout>

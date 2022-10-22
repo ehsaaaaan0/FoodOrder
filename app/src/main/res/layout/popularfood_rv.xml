@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:gravity="center"
+    android:id="@+id/videde"
+    android:layout_height="250dp">
+
+    <ImageView
+        android:id="@+id/dishimage"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:elevation="30dp"
+        android:src="@drawable/burger" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="195dp"
+        android:layout_height="200dp"
+        app:cardCornerRadius="30dp"
+        android:layout_below="@+id/dishimage"
+        app:cardMaxElevation="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="-45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/popularbg"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger DIsh"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/dishName"
+                android:maxWidth="130dp"
+                android:textColor="@color/textcolor"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/star"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/textcoloenormal"
+                    android:layout_gravity="center"/>
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/marker"
+                    android:layout_marginStart="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20 min"
+                    android:id="@+id/prepTime"
+                    android:layout_marginStart="3dp"
+                    android:textColor="@color/textcoloenormal"
+                    android:layout_gravity="center"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="350Rs"
+                android:id="@+id/dishPrice"
+                android:layout_gravity="center"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/textcolor"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
+

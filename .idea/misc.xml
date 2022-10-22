@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable-v24/button_bg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable-v24/edit_text_bg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/admin_topbg.xml" value="0.1725" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/buttonbg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/chat_selection.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/cricler_bg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/cricler_with_white_bg.xml" value="0.1" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/cricularbuttonbg.xml" value="0.181" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/home_profile_image_bg.xml" value="0.174" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/home_selection.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/list_rv_bg.xml" value="0.18" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/lists.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/minus.xml" value="0.1885" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/popularbg.xml" value="0.1745" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/profile.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/profile_bg.xml" value="0.172" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/promo_bg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/search_bg.xml" value="0.1705" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/drawable/tab_layout_bg.xml" value="0.172" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout-land/activity_cart.xml" value="0.22" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/active_rv.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_account_information.xml" value="0.33" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_active_orders.xml" value="0.18055555555555555" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_add_food.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_cart.xml" value="0.33" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_checkout.xml" value="0.18229166666666666" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_complaint_and_suggestion.xml" value="0.18055555555555555" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_main.xml" value="0.18229166666666666" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_main_login_screen.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_new_main.xml" value="0.1685185185185185" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_past_orders.xml" value="0.17239583333333333" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_pending_dilivery.xml" value="0.17239583333333333" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_pop_up_address.xml" value="0.5" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_preparing_food.xml" value="0.33" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_product_page.xml" value="0.45721583652618136" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_profile.xml" value="0.22" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/activity_single_dish_show.xml" value="0.17239583333333333" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/admin_com_sug.xml" value="0.18055555555555555" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_c_omplaint__admin.xml" value="0.18055555555555555" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_chat.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_complaint.xml" value="0.18229166666666666" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_home_fragmant.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_list_fragmentr.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_login_tab.xml" value="0.17685185185185184" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_profilefragment.xml" value="0.17685185185185184" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_recomendation.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_recomendation_admin.xml" value="0.18055555555555555" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/fragment_signup_tab.xml" value="0.25" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/list_rv.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/past_order_rv.xml" value="0.33" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/layout/popularfood_rv.xml" value="0.18645833333333334" />
+        <entry key="..\:/SH practice/FoodOrder/app/src/main/res/menu/nav_menu.xml" value="0.17685185185185184" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/onitsway"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="30dp"
+        app:cardMaxElevation="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/order_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="Order Id : "
+                android:textSize="18sp"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/dish_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:text="Dish Name : "
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/order_id_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Quantity : "
+                android:id="@+id/quantityText"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dish_name_text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif"
+                android:text="Address : "
+                android:id="@+id/address_text"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/quantityText" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:textSize="18sp"
+                android:text="Price : "
+                android:id="@+id/price_text"
+                android:textColor="@color/textcolor"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/address_text" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Order Status : "
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price_text" />
+
+
+<!--            Getting from firebase start here-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/status"
+                android:text="Preparing Your Food"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/textView10"
+                app:layout_constraintStart_toEndOf="@+id/textView10"
+                app:layout_constraintTop_toTopOf="@+id/textView10"
+                android:layout_marginLeft="5dp" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="sans-serif"
+                android:text="500RS"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/price_text"
+                app:layout_constraintStart_toEndOf="@+id/price_text"
+                app:layout_constraintTop_toTopOf="@+id/price_text" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Preparing Your Food"
+                android:id="@+id/daddress"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/address_text"
+                app:layout_constraintStart_toEndOf="@+id/address_text"
+                app:layout_constraintTop_toTopOf="@+id/address_text"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Preparing Your Food"
+                android:id="@+id/maxquanitty"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/quantityText"
+                app:layout_constraintStart_toEndOf="@+id/quantityText"
+                app:layout_constraintTop_toTopOf="@+id/quantityText"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/dishNm"
+                android:text="Preparing Your Food"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dish_name_text"
+                app:layout_constraintStart_toEndOf="@+id/dish_name_text"
+                app:layout_constraintTop_toTopOf="@+id/dish_name_text"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:fontFamily="sans-serif"
+                android:id="@+id/orderid"
+                android:text="Preparing Your Food"
+                android:textColor="@color/textcolor"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@+id/order_id_text"
+                app:layout_constraintStart_toEndOf="@+id/order_id_text"
+                app:layout_constraintTop_toTopOf="@+id/order_id_text"
+                android:layout_marginLeft="5dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:id="@+id/ready"
+                android:layout_height="match_parent"
+                android:background="@drawable/buttonbg"
+                android:text="Ready to SHip"
+                android:layout_marginTop="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

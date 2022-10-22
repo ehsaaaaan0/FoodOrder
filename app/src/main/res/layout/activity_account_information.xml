@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivities.Account_Information">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/profile_bg"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_gravity="end"
+            android:id="@+id/logout_image"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/exit"
+            android:layout_marginRight="10dp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/home_profile_image_bg"
+            android:paddingRight="5dp"
+            app:layout_constraintStart_toStartOf="@+id/guideline1"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/profile_lottie" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/user_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/times_new_roman"
+            android:text="Edit profile"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:fontFamily="sans-serif"
+        android:id="@+id/fullanem"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout"
+        android:textColor="@color/textcoloenormal"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:background="@drawable/edit_text_bg"
+        android:text=""
+        android:paddingStart="20dp"
+        android:inputType="text"
+        android:id="@+id/edit_name"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/fullanem"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/email_get"
+        android:textSize="16sp"
+        android:textColor="@color/textcoloenormal"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:background="@drawable/edit_text_bg"
+        android:text=""
+        android:paddingStart="20dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/edit_email"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/email_get"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address"
+        app:layout_constraintTop_toBottomOf="@+id/edit_email"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:id="@+id/address_get"
+        android:textSize="16sp"
+        android:textColor="@color/textcoloenormal"/>
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="43dp"
+        android:background="@drawable/edit_text_bg"
+        android:text=""
+        android:paddingStart="20dp"
+        android:inputType="text"
+        android:id="@+id/edit_address"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/address_get"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:text="Save Changes"
+        android:id="@+id/done"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline1"
+        app:layout_constraintTop_toBottomOf="@+id/edit_address" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

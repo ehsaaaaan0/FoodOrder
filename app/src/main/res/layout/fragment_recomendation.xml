@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Recomendation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/recomendation"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:paddingRight="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        android:scaleType="fitXY"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/recommendation" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/times_new_roman"
+        android:text="Have Some Thing to Recomend?"
+        android:textColor="@color/textcolor"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recomendation" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Your Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcoloenormal"
+        android:id="@+id/getName_reco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="30dp" />
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="Enter Your Email"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingStart="30dp"
+        android:id="@+id/getEmail_reco"
+        android:textSize="15sp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcoloenormal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getName_reco"
+        android:background="@drawable/edit_text_bg"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:id="@+id/getMessage_reco"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:textSize="15sp"
+        android:textColor="@color/textcolor"
+        android:textColorHint="@color/textcoloenormal"
+        android:background="@drawable/edit_text_bg"
+        android:hint="Enter Your Recomendation"
+        android:paddingStart="30dp"
+        android:paddingLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getEmail_reco" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonbg"
+        android:text="Submit"
+        android:id="@+id/submit_reco"
+        android:textColor="@color/textcolor"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getMessage_reco" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
